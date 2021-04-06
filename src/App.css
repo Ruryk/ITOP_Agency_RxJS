@@ -1,38 +1,88 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  font-size: 80px;
 }
 
-.App-link {
-  color: #61dafb;
+.time {
+  margin-top: -10%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.control button {
+  margin: 5px;
+  font-size: 0.3em;
+}
+
+.btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0.0625em solid transparent;
+  border-radius: 0.25em;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.25;
+  overflow: hidden;
+  padding: 0.65em 1em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  -webkit-touch-callout: none;
+  transition: all 0.15s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.btn--primary {
+  background-color: #2ea0eb;
+  color: #fff;
+}
+
+.btn--primary:hover,
+.btn--primary:focus {
+  background-color: #1487d2;
+}
+.btn--primary:active,
+.btn--primary.btn--is-active {
+  background-color: #1069a3;
+}
+
+.btn--success {
+  background-color: #89d085;
+  color: #fff;
+}
+.btn--success:hover,
+.btn--success:focus {
+  background-color: #65c260;
+}
+.btn--success:active,
+.btn--success.btn--is-active {
+  background-color: #48ad42;
+}
+
+.btn--danger {
+  background-color: #fa5757;
+  color: #fff;
+}
+.btn--danger:hover,
+.btn--danger:focus {
+  background-color: #f92525;
+}
+.btn--danger:active,
+.btn--danger.btn--is-active {
+  background-color: #e40707;
+}
+
+.btn:disabled {
+  background-color: #4d5153;
 }
